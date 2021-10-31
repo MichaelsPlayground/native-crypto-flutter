@@ -1,5 +1,15 @@
 # NativeCrypto for Flutter
 
+https://github.com/hugo-pcl/native-crypto-flutter
+
+runs a benchmark 
+
+supports AES CBC & GCM, PKCS5 padding & none
+
+läuft komplett unter IOS
+
+scheitert in Android bei 256 MB beim Encoding wegen fehlendem Speicher
+
 ![NativeCrypto Logo](/assets/native_crypto.png)
 ---
 

@@ -123,6 +123,16 @@ class _CipherPageState extends State<CipherPage> {
           "\nCipherText: " +
           cipherText.bytes.toString());
     }
+    SecretKey _key = await SecretKey.generate(256, CipherAlgorithm.AES);
+    AESCipher aes = AESCipher(
+      _key,
+      CipherParameters(
+        BlockCipherMode.CBC,
+        //BlockCipherMode.ECB,
+        PlainTextPadding.PKCS5,
+      ),
+    );
+
   }
 
   @override

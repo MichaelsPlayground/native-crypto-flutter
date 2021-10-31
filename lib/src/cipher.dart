@@ -9,6 +9,7 @@ import 'key.dart';
 enum CipherAlgorithm { AES, None }
 
 /// Represents different block cipher modes
+//enum BlockCipherMode { ECB, CBC, GCM }
 enum BlockCipherMode { CBC, GCM }
 
 /// Represents different padding
